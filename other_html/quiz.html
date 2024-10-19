@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесты и квизы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Тесты и квизы</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="materials.html">Учебные материалы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Пройдите тест</h2>
+        <form id="quizForm">
+            <div>
+                <p>Вопрос 1: Выберите один вариант</p>
+                <input type="radio" name="question1" value="1"> Вариант 1<br>
+                <input type="radio" name="question1" value="2"> Вариант 2<br>
+                <input type="radio" name="question1" value="3"> Вариант 3<br>
+            </div>
+            <div>
+                <p>Вопрос 2: Выберите несколько вариантов</p>
+                <input type="checkbox" name="question2" value="1"> Вариант A<br>
+                <input type="checkbox" name="question2" value="2"> Вариант B<br>
+                <input type="checkbox" name="question2" value="3"> Вариант C<br>
+            </div>
+            <div>
+                <p>Вопрос 3: Открытый вопрос</p>
+                <textarea name="question3"></textarea>
+            </div>
+            <button type="button" onclick="submitQuiz()">Отправить</button>
+        </form>
+    </main>
+    <script src="../sctipts.js"></script>
+</body>
+</html>

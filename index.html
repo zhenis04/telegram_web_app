@@ -3,36 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Web App</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #0088cc;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Образовательная платформа</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Добро пожаловать в Telegram Web App!</h1>
-    <button id="sendData">Отправить данные в Telegram</button>
-
-    <script>
-        const telegram = window.Telegram.WebApp;
-
-        document.getElementById('sendData').onclick = function() {
-            // Пример отправки данных обратно в Telegram
-            telegram.sendData("Hello from Web App!");
-        };
-    </script>
+    <header>
+        <h1>Добро пожаловать на образовательную платформу</h1>
+        <nav>
+            <ul>
+                <li><a href="/other_html/materials.html">Учебные материалы</a></li>
+                <li><a href="/other_html/quiz.html">Тесты и квизы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Выберите раздел</h2>
+        <p>Перейдите в "Учебные материалы" для просмотра материалов или в "Тесты и квизы" для прохождения тестов.</p>
+    </main>
 </body>
 </html>

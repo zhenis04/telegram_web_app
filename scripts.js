@@ -12,5 +12,14 @@ function uploadMaterial() {
 }
 
 function submitQuiz() {
+    alert('Тест по Java отправлен! Ответы будут проверены автоматически.');
+}
+
+function submitPythonQuiz() {
+    alert('Тест по Python отправлен! Ответы будут проверены автоматически.');
+}
+function submitQuiz(formId) {
     alert('Тест отправлен! Ответы будут проверены автоматически.');
+    const form = document.getElementById(formId);
+    form.reset();
 }

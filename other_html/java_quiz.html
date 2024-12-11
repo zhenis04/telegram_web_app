@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on Java</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="icon" type="image/png" href="/img/nieto_icon.png">
+</head>
+<body>
+    <header>
+        <h1>Quiz on Java</h1>
+        <nav>
+            <ul>
+                <li><a class="menu_link menu_link_quizzes" href="/other_html/quiz.html">Return back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="quiz-section">
+            <form id="javaQuizForm">
+                <div class="question">
+                    <div class="quiz-list_title">
+                        <p>Question 1: Which method is used to run a program in Java?</p>
+                    </div>
+                    <input type="radio" name="javaQuestion1" value="1"> `start()`<br>
+                    <input type="radio" name="javaQuestion1" value="2"> `main()`<br>
+                    <input type="radio" name="javaQuestion1" value="3"> `run()`<br>
+                </div>
+                <div class="question">
+                    <div class="quiz-list_title">
+                        <p>Question 2: How to declare a string variable in Java?</p>
+                    </div>
+                    <input type="radio" name="javaQuestion2" value="1"> `String str;`<br>
+                    <input type="radio" name="javaQuestion2" value="2"> `var str;`<br>
+                    <input type="radio" name="javaQuestion2" value="3"> `str`<br>
+                </div>
+                <div class="question">
+                    <div class="quiz-list_title">
+                        <p>Question 3: How to create an object in Java?</p>
+                    </div>
+                    <input type="radio" name="javaQuestion3" value="1"> `new MyClass();`<br>
+                    <input type="radio" name="javaQuestion3" value="2"> `MyClass()`<br>
+                    <input type="radio" name="javaQuestion3" value="3"> `create MyClass()`<br>
+                </div>
+                <button type="button" class="button" onclick="submitQuiz('javaQuizForm')">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Educational platform</p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on JavaScript</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="icon" type="image/png" href="/img/nieto_icon.png">
+</head>
+<body>
+    <header>
+        <h1>Quiz on JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a class="menu_link menu_link_quizzes" href="/other_html/quiz.html">Return back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="quiz-section">
+            <form id="javascriptQuizForm">
+                <div class="question">
+                    <div class="quiz-list_title">
+                        <p>Question 1: How to declare a variable in JavaScript?</p>
+                    </div>
+                    <input type="radio" name="javascriptQuestion1" value="1"> `var myVar;`<br>
+                    <input type="radio" name="javascriptQuestion1" value="2"> `int myVar;`<br>
+                    <input type="radio" name="javascriptQuestion1" value="3"> `let myVar`<br>
+                </div>
+                <div class="question">
+                    <div class="quiz-list_title">
+                        <p>Question 2: Which command is used to print to the screen in JavaScript?</p>
+                    </div>
+                    <input type="radio" name="javascriptQuestion2" value="1"> `echo "Hello";`<br>
+                    <input type="radio" name="javascriptQuestion2" value="2"> `console.log("Hello");`<br>
+                    <input type="radio" name="javascriptQuestion2" value="3"> `printf("Hello");`<br>
+                </div>
+                <div class="question">
+                    <div class="quiz-list_title">
+                        <p>Question 3: What data type is used to store text in JavaScript?</p>
+                    </div>
+                    <input type="radio" name="javascriptQuestion3" value="1"> `String`<br>
+                    <input type="radio" name="javascriptQuestion3" value="2"> `Text`<br>
+                    <input type="radio" name="javascriptQuestion3" value="3"> `Character`<br>
+                </div>
+                <button type="button" class="button" onclick="submitQuiz('javascriptQuizForm')">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Educational platform</p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>
